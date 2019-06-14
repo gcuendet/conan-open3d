@@ -1,14 +1,13 @@
 #include <iostream>
 #include <string>
 
-#include <Core/Core.h>
-#include <IO/IO.h>
+#include <Open3D.h>
 
 
 int main(){
 	using namespace open3d;
 
-    Image color_image_8bit;
+    geometry::Image color_image_8bit;
 
 	return 0;
 }

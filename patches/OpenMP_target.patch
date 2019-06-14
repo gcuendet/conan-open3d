@@ -1,0 +1,11 @@
+--- a/src/Open3D/CMakeLists.txt
++++ b/src/Open3D/CMakeLists.txt
+@@ -56,7 +56,7 @@
+ 
+ target_link_libraries(${CMAKE_PROJECT_NAME}
+                       ${3RDPARTY_LIBRARIES}
+-                      ${OMP_LIBRARIES})
++                      OpenMP::OpenMP_CXX)
+ 
+ # input_dirs: a list of absolute paths in the source dir
+ # output_dirs: a list of relative paths in the install dir
