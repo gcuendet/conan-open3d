@@ -42,6 +42,8 @@ class Open3dConan(ConanFile):
     exports_sources = "CMakeLists.txt",
 
     def requirements(self):
+        if self.settings.os == 'Macos':
+            self.requires('OpenMP/[70.0.0-3, include_prerelease=True]@pix4d/stable')
         if self.options.with_visualization:
             self.requires("glew/[>=2.1.0]@bincrafters/stable")
     
