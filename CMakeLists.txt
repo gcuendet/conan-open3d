@@ -7,7 +7,7 @@ endif()
 project(open3d_conan)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
+conan_basic_setup(KEEP_RPATHS)
 
 SET(EIGEN3_INCLUDE_DIRS "${CONAN_INCLUDE_DIRS_EIGEN}")
 SET(GLEW_INCLUDE_DIRS "${CONAN_INCLUDE_DIRS_GLEW}")
